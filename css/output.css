@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+    /* Fonts */
+    --Poppins: 'Poppins', sans-serif;
+    /* Colors */
+    /* Primary */
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    /* Neutral */
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+article {
+    font-style: italic;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+output {
+    font-weight: 800;
+    color: var(--Purple);
+}
+
+@media screen and (min-width:1000px) {
+    article {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+}

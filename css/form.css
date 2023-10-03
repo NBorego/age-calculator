@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+:root {
+    /* Primary */
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    /* Neutral */
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+form {
+    display: flex;
+}
+
+.input-label-div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.8rem;
+}
+
+label {
+    margin-bottom: .5rem;
+    color: var(--Smokey-grey);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+input {
+    width: 5rem;
+    height: 3rem;
+
+    padding-left: .7rem;
+
+    color: var(--Off-black);
+    font-size: 1.1rem;
+
+    border: solid 1px var(--Light-grey);
+    border-radius: .5rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--Purple);
+    caret-color: var(--Purple);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+#line-decoration {
+    position: relative;
+    margin: 3rem 0rem;
+    border-top: 2px solid var(--Light-grey);
+}
+
+small {
+    color: red;
+    font-size: .6rem;
+    width: 5rem;
+    font-style: italic;
+    margin-top: .2rem
+}
+
+button {
+    display: flex;
+
+    position: absolute; 
+    top: -25px;
+    right: 120px;
+
+    padding: 1rem;
+
+    background-color: var(--Purple);
+
+    border: none;
+    border-radius: 50%;
+
+    transition: .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--Off-black);
+}
+
+button > img {
+    width: 1rem;
+}
+
+@media screen and (min-width:1000px) {
+    .input-label-div {
+        margin-right: 2rem;
+    }
+
+    input {
+        width: 9rem;
+        height: 4rem;
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+
+    small {
+        width: 10rem;
+        font-size: .8rem;
+    }
+
+    #line-decoration {
+        width: 40rem;
+        margin-right: 6rem;
+    }
+
+    button {
+        top: -45px;
+        right: -80px;
+    
+        padding: 1.5rem;   
+    }
+
+    button > img {
+        width: 2.5rem;
+    }
+}

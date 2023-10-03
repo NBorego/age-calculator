@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+        <!-- Main -->
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- Form -->
+        <link rel="stylesheet" href="./css/form.css">
+        <!-- Output -->
+        <link rel="stylesheet" href="./css/output.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <!-- Tittle -->
+    <title>Age Calculator</title>
+</head>
+<body>
+    <section>
+        <form>
+            <!-- Input Day -->
+            <div class="input-label-div">
+                <label for="id-day">Day</label>
+                <input type="number" name="day" id="id-day" min="1" max="31" placeholder="DD" required>
+                <small></small>
+            </div>
+            <!-- Input Month -->
+            <div class="input-label-div">
+                <label for="id-month">Month</label>
+                <input type="number" name="month" id="id-month" min="1" max="12" placeholder="MM" required>
+                <small></small>
+            </div>
+            <!-- Input Year -->
+            <div class="input-label-div">
+                <label for="id-year">Year</label>
+                <input type="number" name="year" id="id-year" min="1" placeholder="YYYY" required>
+                <small></small>
+            </div> 
+        </form>
+        <!-- Button -->
+        <div id="line-decoration">
+            <button id="id-button">
+                <img src="./assets/images/icon-arrow.svg" alt="Icon arrow">
+            </button>
+        </div>
+
+        <article>
+            <div>
+                <output id="year-out"> --</output> 
+                <strong>years</strong>
+            </div>
+
+            <div>
+                <output id="month-out"> --</output> 
+                <strong>months</strong>
+            </div>
+
+            <div>
+                <output id="day-out"> --</output> 
+                <strong>days</strong>
+            </div>
+        </article>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
